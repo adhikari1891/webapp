@@ -21,6 +21,9 @@ class Engine{
 	void setEngine() {
 		//accessing the cartype property of Nestedclass
 		if(Nested.this.carType.equals("4WD")) {
+			//Nested.this.getCarName() access the member of outer class
+			// but this.getCarName() access inner class member
+			//getCarName()is a private method we are able to access it from the inner class			
 			if(Nested.this.getCarName().equals("Honda")) {
 				this.engineType="Larger";
 			}else {
